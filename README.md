@@ -15,6 +15,8 @@ Ce projet a été construit car j'apprends les bases de l'HTML, du CSS et de Jav
 
 <li>Bouton interactif avec effet au survol et au clic</li>
 
+<li>Texte qui change en fonction du nombre de clics</li>
+
 <li>Design adorable de cookie</li>
 </ul>
 
