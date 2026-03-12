@@ -25,6 +25,8 @@ const fortunes = [
         
 const boutonChinois = document.querySelector("button");
 
+const crackSound = document.getElementById("crackSound");
+
 boutonChinois.addEventListener("click", generateFortune);
 
 function generateFortune() {
@@ -32,6 +34,9 @@ function generateFortune() {
   const fortune = fortunes[randomIndex];
   clickCount++;
   document.getElementById("fortune").textContent = fortune;
+
+              crackSound.currentTime = 0;
+  crackSound.play();
             if (clickCount === 1) {
                         message.textContent = "Vous avez ouvert votre biscuit chinois.";
 }
@@ -39,4 +44,5 @@ function generateFortune() {
                         message.textContent = "Tricheur, la fortune vous a à l'œil.";
 }
 }
+
 
