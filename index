@@ -15,7 +15,7 @@
         <div class="fortune-display">
             <p class="fortune-text" id="fortune">Cliquez sur le bouton pour obtenir une prédiction...</p>
         </div>
-        <button onclick="generateFortune()">Générer une Prédiction</button>
+        <button>Générer une Prédiction</button>
     </div>
     </main>
     <footer id="footer">
@@ -25,3 +25,4 @@
 </body>
 
 </html>
+
