@@ -1,3 +1,5 @@
+let clickCount = 0;
+
 const fortunes = [
             "Vous deviendrez bientôt un champion de cache-cache avec les spaghettis.",
             "La vie est courte, mangez le biscuit d'abord, posez les questions plus tard.",
@@ -28,6 +30,13 @@ boutonChinois.addEventListener("click", generateFortune);
 function generateFortune() {
   const randomIndex = Math.floor(Math.random() * fortunes.length);
   const fortune = fortunes[randomIndex];
+  clickCount++;
   document.getElementById("fortune").textContent = fortune;
+            if (clickCount === 1) {
+                        message.textContent = "Vous avez ouvert votre biscuit chinois.";
+}
+            else {
+                        message.textContent = "Tricheur, la fortune vous a à l'œil.";
+}
 }
 
