@@ -1,5 +1,7 @@
 let clickCount = 0;
 
+const cookieImage = document.getElementById("cookieImage");
+
 const fortunes = [
             "Vous deviendrez bientôt un champion de cache-cache avec les spaghettis.",
             "La vie est courte, mangez le biscuit d'abord, posez les questions plus tard.",
@@ -29,8 +31,6 @@ const crackSound = document.getElementById("crackSound");
 
 boutonChinois.addEventListener("click", generateFortune);
 
-const cookieImage = document.getElementById("cookieImage");
-
 function generateFortune() {
   const randomIndex = Math.floor(Math.random() * fortunes.length);
   const fortune = fortunes[randomIndex];
@@ -50,6 +50,7 @@ function generateFortune() {
       cookieImage.src = "biscuitchinois.png";
   }, 1000);
 }
+
 
 
 
