@@ -46,10 +46,14 @@ function generateFortune() {
             else {
                         message.textContent = "Tricheur, la fortune vous a à l'œil.";
 }
+              cookieImage.classList.add("shake");
+
               setTimeout(function() {
       cookieImage.src = "biscuitchinois.png";
+                           cookieImage.classList.remove("shake");
   }, 1000);
 }
+
 
 
 
