@@ -29,6 +29,8 @@ const crackSound = document.getElementById("crackSound");
 
 boutonChinois.addEventListener("click", generateFortune);
 
+const cookieImage = document.getElementById("cookieImage");
+
 function generateFortune() {
   const randomIndex = Math.floor(Math.random() * fortunes.length);
   const fortune = fortunes[randomIndex];
@@ -37,12 +39,17 @@ function generateFortune() {
 
               crackSound.currentTime = 0;
   crackSound.play();
+              cookieImage.src = "biscuitdevore.png";
             if (clickCount === 1) {
                         message.textContent = "Vous avez ouvert votre biscuit chinois.";
 }
             else {
                         message.textContent = "Tricheur, la fortune vous a à l'œil.";
 }
+              setTimeout(function() {
+      cookieImage.src = "biscuitchinois.png";
+  }, 1000);
 }
+
 
 
