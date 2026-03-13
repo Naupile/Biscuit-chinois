@@ -9,7 +9,7 @@ Ce projet a été construit car j'apprends les bases de l'HTML, du CSS et de Jav
 <ul>
   <li>Générateur aléatoire avec JavaScript</li>
 
-<li>Manipulation du DOM avec getElementById</li>
+<li>Manipulation du DOM</li>
 
 <li>Interface stylisée grâce au CSS (dégradés, bordures, ombrages)</li>
 
@@ -17,7 +17,7 @@ Ce projet a été construit car j'apprends les bases de l'HTML, du CSS et de Jav
 
 <li>Texte qui change en fonction du nombre de clics</li>
 
-<li>Petit effet sonore quand on ouvre un cookie</li>
+<li>Petit effet sonore et visuel quand on ouvre un cookie</li>
 
 <li>Design adorable de cookie</li>
 </ul>
