@@ -22,7 +22,7 @@ Ce projet a été construit car j'apprends les bases de l'HTML, du CSS et de Jav
 <li>Design adorable de cookie</li>
 </ul>
 
-<h2>💬 ​Langages utilisés:</h2>
+<h2>💬 ​Langages utilisés :</h2>
 
 <ul><li>HTML</li>
 
