@@ -39,6 +39,7 @@ function generateFortune() {
 
               crackSound.currentTime = 0;
   crackSound.play();
+                          cookieImage.classList.add("shake");
               cookieImage.src = "biscuitchinoisdevore.png";
             if (clickCount === 1) {
                         message.textContent = "Vous avez ouvert votre biscuit chinois.";
@@ -46,13 +47,13 @@ function generateFortune() {
             else {
                         message.textContent = "Tricheur, la fortune vous a à l'œil.";
 }
-              cookieImage.classList.add("shake");
 
               setTimeout(function() {
       cookieImage.src = "biscuitchinois.png";
                            cookieImage.classList.remove("shake");
   }, 1000);
 }
+
 
 
 
