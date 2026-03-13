@@ -17,6 +17,8 @@ Ce projet a été construit car j'apprends les bases de l'HTML, du CSS et de Jav
 
 <li>Texte qui change en fonction du nombre de clics</li>
 
+<li>Petit effet sonore quand on ouvre un cookie</li>
+
 <li>Design adorable de cookie</li>
 </ul>
 
