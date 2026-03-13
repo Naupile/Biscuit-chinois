@@ -39,7 +39,7 @@ function generateFortune() {
 
               crackSound.currentTime = 0;
   crackSound.play();
-              cookieImage.src = "biscuitchinoisdévoré.png";
+              cookieImage.src = "biscuitchinoisdevore.png";
             if (clickCount === 1) {
                         message.textContent = "Vous avez ouvert votre biscuit chinois.";
 }
@@ -50,6 +50,7 @@ function generateFortune() {
       cookieImage.src = "biscuitchinois.png";
   }, 1000);
 }
+
 
 
 
