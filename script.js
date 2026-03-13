@@ -32,27 +32,36 @@ const crackSound = document.getElementById("crackSound");
 boutonChinois.addEventListener("click", generateFortune);
 
 function generateFortune() {
+
   const randomIndex = Math.floor(Math.random() * fortunes.length);
   const fortune = fortunes[randomIndex];
+
   clickCount++;
+
   document.getElementById("fortune").textContent = fortune;
 
-              crackSound.currentTime = 0;
+  crackSound.currentTime = 0;
   crackSound.play();
-                          cookieImage.classList.add("shake");
-              cookieImage.src = "biscuitchinoisdevore.png";
-            if (clickCount === 1) {
-                        message.textContent = "Vous avez ouvert votre biscuit chinois.";
-}
-            else {
-                        message.textContent = "Tricheur, la fortune vous a à l'œil.";
+
+  cookieImage.classList.add("shake");
+
+  setTimeout(function() {
+    cookieImage.src = "biscuitchinoisdevore.png";
+  }, 200);
+
+  if (clickCount === 1) {
+    message.textContent = "Vous avez ouvert votre biscuit chinois.";
+  } else {
+    message.textContent = "Tricheur, la fortune vous a à l'œil.";
+  }
+
+  setTimeout(function() {
+    cookieImage.src = "biscuitchinois.png";
+    cookieImage.classList.remove("shake");
+  }, 1000);
+
 }
 
-              setTimeout(function() {
-      cookieImage.src = "biscuitchinois.png";
-                           cookieImage.classList.remove("shake");
-  }, 1000);
-}
 
 
 
